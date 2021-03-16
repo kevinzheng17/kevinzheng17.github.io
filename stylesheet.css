@@ -1,0 +1,176 @@
+/*Styles the text and background color of the webpage*/
+BODY {
+    background-color: slategrey;
+    font-family: "Lucida Console";
+    /*Makes it so all elements stretch to the end of the page*/
+    margin: 0;
+}
+
+/*Centers and underlines all the text within headings*/
+h1, h2, h3, h4, h5 {
+    text-decoration: underline;
+    text-align: center;
+}
+
+p {
+    color: white;
+}
+
+/*Meet the Members bio*/
+p.description {
+    margin-left: 20px;
+    margin-right: 20px;
+    color: antiquewhite;
+    text-align: justify;
+    line-height: 30px;
+}
+ol.description {
+    margin-left: 20px;
+    margin-right: 20px;
+    color: antiquewhite;
+    text-align: justify;
+    line-height: 30px;
+}
+ul.description {
+    margin-left: 20px;
+    margin-right: 20px;
+    color: antiquewhite;
+    text-align: justify;
+    line-height: 30px;
+}
+
+/*Headers turn from black text to white text if hovered over*/
+h1:hover{
+    color: white;
+}
+h2:hover {
+    color: white;
+}
+h3:hover {
+    color: white;
+}
+h4:hover {
+    color: white;
+}
+h5:hover {
+    color: white;
+}
+h6:hover {
+    color: white;
+}
+
+/* unvisited link */
+a:link {
+    color: red;
+}
+/* mouse over link */
+a:hover {
+    color: black;
+}
+/* selected link */
+a:active {
+    color: green;
+}
+/* visited link */
+a:visited {
+    color: blue;
+}
+
+/*Push to right or left side of the page*/
+.right{
+    float:right;
+}
+.left{
+    float:left;
+}
+
+/*Applying this to all elements is safe and wise:*/
+* {
+    box-sizing: border-box;
+}
+
+/*Navigaton Bar*/
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+/* Style the topnav links */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+/* Change color on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/*adds borders to Meet The Members with necessary margin and padding*/
+.collegeBorders{
+    border: 2px solid black;
+    /*border roundness*/
+    border-radius: 100px;
+}
+.imageSizing {
+    padding: 20px;
+    margin: 20px;
+}
+
+/*Handles the size of pictures showing the merch*/
+.merch{
+    width: 375px;
+    height: 750px;
+}
+
+/*YOTH Animation*/
+#YOTH{
+    animation-name: yoth;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+}
+@keyframes yoth {
+    0% {
+       opacity: 0;
+    }
+    33% {
+        opacity: 0.3;
+    }
+    66% {
+        opacity: .6;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/*centers everything*/
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Handles layout of gallery pictures*/
+.lImage {
+    margin-left: 2in;
+    padding: 25px;
+}
+.rImage{
+    margin-left: 3in;
+    padding: 25px;
+}
+.thingallery {
+    width: 7in;
+    height: 9in;
+    margin: 25px;
+}
+
+/*Add fade effect*/
+img.fade:hover{
+    opacity: 0.3;
+}
